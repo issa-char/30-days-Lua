@@ -17,7 +17,7 @@ print(a, b)
 local person = {
     name = "Jonh",
     age = 30,
-    isStudent = false
+    isStudent = false,
     grades = {80, 88, 93, 20, 55, 89}
 }
 
@@ -28,7 +28,7 @@ print(person.grades[3])     -- accessing nested elements
 -- coroutines: provide a way to write concurrent code, allow you pause and resume the execution of a function
 local co = coroutine.create(function ()
     for i = 1, 3 do
-        print("count: ", ..i)
+        print("count: ", i)
         coroutine.yield()
     end
 end)
@@ -50,10 +50,11 @@ local metatable = {
   __add = function(table1, table2)
     local result = {}
     for i = 1, #table1 do
-        result[i] = table[i] + table2[i]
+        result[i] = table1[i] + table2[i]
     end
     return result
  end
+ }
 
 -- creating tables with metatables
 local table1 = {1, 2, 3}

@@ -33,7 +33,7 @@ file:close()
 -- string manipulation
 -- lua provides a couple of string funcions to manipulate strings
 local str = "lua Programming"
-prin(string.sub(str, 1, 3)) -- substring
+print(string.sub(str, 1, 3)) -- substring
 
 -- find and replace
 local newStr = string.gsub(str, "Programming", "Scripting")
