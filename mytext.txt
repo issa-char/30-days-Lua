@@ -1,1 +1,6 @@
-hello world
+this is file to be read and written
+lua is efficient small and just right
+so far i'm having fun using it
+feels great to have this feeling
+feeling good about feeling good
+who would have thought
